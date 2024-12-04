@@ -23,3 +23,21 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+total=0.0
+
+print("You will enter in 2 numbers and this program will find the interst and closing balance.")
+print()
+for i in range(2):
+    month=i+1
+    purchase=input("Enter total purchases for month:")
+    purchase=float(purchase)
+    payment=input("Enter total payments for month:")
+    payment=float(payment)
+    remain=purchase-payment
+    #remain=remain
+    interest=(total+remain)*0.02
+    total += remain+interest
+    total=round(total,2)
+
+print(f"2% interest has been charged:{interest}")
+print(f"Your closing balance is {total}")

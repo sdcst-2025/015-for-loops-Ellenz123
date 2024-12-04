@@ -25,3 +25,9 @@ example:
 Enter number:4
 4 8 12 16 20 24 28 32 36 40 44 48
 """
+i=input("Enter an integer:")
+i=int(i)
+
+for i in range(1,13):
+    i=i*4
+    print(f'{i}')

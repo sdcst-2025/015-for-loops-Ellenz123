@@ -11,8 +11,8 @@ print()
 for i in range(3):
     num = i + 1
     strNum = input(f"Enter in number {num}>")
-    intNum = int(strNum)
-    total = total + intNum
+    intNum=int(strNum)
+    total=total+intNum
 print(f"The total of your numbers is {total}")
 
 """
